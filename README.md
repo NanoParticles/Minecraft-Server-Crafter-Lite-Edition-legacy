@@ -14,5 +14,7 @@ All you need is to have is the server jar file in your server directory, and an 
 # Features
 
 Console Shell - The core component of Minecraft Server Crafter. This shows the input/output of the Minecraft Server, as well as what Minecraft Server Crafter outputs
+
 Server Properties File detection - Any pre-existing server properties file that is detected by Minecraft Server Crafter in the given server directory is automatically imported to Minecraft Server Crafter
+
 Sqlite 3 Database - Minecraft Server Crafter also searches for the JSON files for whitelisting, and bans to add them to their respective tables. All changes is configured in Minecraft Server Crafter
