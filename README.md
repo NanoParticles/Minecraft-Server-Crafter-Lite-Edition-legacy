@@ -2,7 +2,7 @@
  Minecraft Server Crafter - Lite Edition is a Lightweight GUI Console that allows the user to create, configure, and manage a Minecraft Server with the given server jar file.
 
  # Credits
- Yot360 - Huge thanks for helping me with the Console Shell interaction with input and output between the Minecraft Server and Minecraft Server Crafter
+ Yot360 - Huge thanks for helping me with the Console Shell interaction with input and output between the Minecraft Server and Minecraft Server Crafter. (Github page: https://github.com/Yot360)
 
  # What is Minecraft Server Crafter?
 
