@@ -18,3 +18,5 @@ Console Shell - The core component of Minecraft Server Crafter. This shows the i
 Server Properties File detection - Any pre-existing server properties file that is detected by Minecraft Server Crafter in the given server directory is automatically imported to Minecraft Server Crafter
 
 Sqlite 3 Database - Minecraft Server Crafter also searches for the JSON files for whitelisting, and bans to add them to their respective tables. All changes is configured in Minecraft Server Crafter
+
+Networking - This program automatically detects the Local IP address of the machine the program is on and sets it as the IP address by default for the Server IP, which can be changed within the program under Server Properties File > Networking. This feature doesn't collect any personal data maliciously. 
