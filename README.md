@@ -6,7 +6,21 @@
 
  # What is Minecraft Server Crafter?
 
-Minecraft Server Crafter is a modernized GUI Server Manager with a clean look for Minecraft Servers, featuring a direct console that shows the input/output of the Minecraft Server, configuring the server.properties file directly, manages whitelisting, and player bans. 
+Minecraft Server Crafter is a modernized GUI Server Manager with a clean look for Minecraft Servers, featuring a direct console that shows the input/output of the Minecraft Server, configuring the server.properties file directly, manages whitelisting, and player bans. Minecraft Server Crafter doesn't collect any of your personal data. Its not the "server crafting" way.
+
+# Wait, but my Antivirus sees it as a virus!
+
+That can be scary. Believe me, Minecraft Server Crafter is my baby. Like any parent, I want to take care of my baby. Minecraft Server Crafter has such a low score it should be no problem. Lower the score the better. Its highly likely it came back as a falsely positive. First take a deep breath. Now that we have taken that deep breath, consider the following:
+
+- Have I updated my virus definitions?
+
+Updating the virus definitions is a potitiental elaphant in the room. Try updating the definitions first then try it again.
+
+- What can I do within my antivirus software to effectively communicate to my security vendor?
+
+Most antivirus software has ways to report to the security vendor directly within their own application. If your antivirus software doesn't have a way to contact them directly, heres a repository with their information: https://github.com/yaronelh/False-Positive-Center
+
+For statistical data on the matter(regarding the virus score, and other information), refer to this data: https://www.virustotal.com/gui/file/f8ea222edf92222be6a5b6943fba994271bdfd221f4a14c3b7715ff9d295c3bb/detection
 
 # Requirements
 All you need is to have is the server jar file in your server directory, and an active internet connection
@@ -19,4 +33,4 @@ Server Properties File detection - Any pre-existing server properties file that 
 
 Sqlite 3 Database - Minecraft Server Crafter also searches for the JSON files for whitelisting, and bans to add them to their respective tables. All changes is configured in Minecraft Server Crafter
 
-Networking - This program automatically detects the Local IP address of the machine the program is on and sets it as the IP address by default for the Server IP, which can be changed within the program under Server Properties File > Networking. This feature doesn't collect any personal data maliciously. 
+Networking - This program automatically detects the Local IP address of the machine the program is on and sets it as the IP address by default for the Server IP, which can be changed within the program under Server Properties File > Networking.
