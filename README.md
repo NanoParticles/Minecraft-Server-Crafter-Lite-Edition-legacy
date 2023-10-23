@@ -22,7 +22,7 @@ Most antivirus software has ways to report to the security vendor directly withi
 
 - What antivirus software is affected?
 
-If you are using any of the following antivirus software, Minecraft Server Crafter will be blocked by the security vendors.
+If you are using any of the following antivirus software, Minecraft Server Crafter will be blocked by the security vendor:
 - Bkav Pro
 - SecureAge
 - Skyhigh(SWG)
