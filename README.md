@@ -20,6 +20,16 @@ Updating the virus definitions is a potitiental elaphant in the room. Try updati
 
 Most antivirus software has ways to report to the security vendor directly within their own application. If your antivirus software doesn't have a way to contact them directly, heres a repository with their information: https://github.com/yaronelh/False-Positive-Center
 
+- What antivirus software is affected?
+
+If you are using any of the following antivirus software, Minecraft Server Crafter will be blocked by the security vendors.
+- Bkav Pro
+- SecureAge
+- Skyhigh(SWG)
+- Trellix(FireEye)
+
+You will need to configure your antivirus software to tell it that Minecraft Server Crafter isn't what it is claiming to be
+
 For statistical data on the matter(regarding the virus score, and other information), refer to this data: https://www.virustotal.com/gui/file/f8ea222edf92222be6a5b6943fba994271bdfd221f4a14c3b7715ff9d295c3bb/detection
 
 # Requirements
