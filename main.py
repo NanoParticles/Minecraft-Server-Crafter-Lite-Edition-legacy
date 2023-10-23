@@ -1496,39 +1496,6 @@ class MOTDWindow():
 		
 		return
 
-class PlayerListing():
-	global process2
-	def __init__(self,parent):
-		self.parent = parent
-		self.players = []
-
-		#Create widget
-		self.root = CTkFrame(self.root)
-		self.root.grid(row=0,column=0)
-		self.playerlistlabel = CTkLabel(self.root,text="Players List")
-		self.playerlistlabel.grid(row=0,column=0)
-		self.playerlist = CTkListbox(self.root)
-		self.playerlist.grid(row=1,column=0)
-
-		def callPlayerListing():
-			process2.stdin.write(b'/list\n')
-			process2.stdin.flush()
-			serverResponse = process2.stdout.readline().decode().strip()
-			listing = serverResponse.split(":")[1].strip().split(",")
-			raw_list = list(listing)
-			#Schedule for automation
-			self.root.after(500,self.callPlayerListing)
-			return raw_list
-
-		if InternetHost.connectionCheck() == True and process2.is_alive() == True:
-			#We need to fetch the player list
-			listing = callPlayerListing()
-			self.players = [listing]
-			#Populate the listbox
-			for item in self.players:
-				self.playerlist.insert(END,str(item))
-		return
-
 #Console Shell Tab
 ConsoleFrame = CTkFrame(root_tabs.tab("Console Shell"))
 ConsoleWindow = ConsoleShell(ConsoleFrame)
