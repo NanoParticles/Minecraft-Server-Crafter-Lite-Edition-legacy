@@ -117,14 +117,12 @@ class FileSelectWindow(CTkToplevel):
 		self.fileselection.heading("Type", text="Type")
 		self.populateView(self.fileselection, "", self.currentpath)  # Populate the initial view
 
-		self.btncanvas = CTkCanvas(self.root, highlightthickness=0)
-		self.btncanvas.pack(side=BOTTOM)
-		self.selectedFileLabel = CTkLabel(self.btncanvas, text="Filepath: ")
-		self.selectedFileLabel.grid(row=0, column=0, sticky=E)
-		self.selectedFileAddressBar = CTkEntry(self.btncanvas)
-		self.selectedFileAddressBar.grid(row=0, column=1, padx=(0, 5), sticky=W+E, ipadx=270)
-		self.selectbtn = CTkButton(self.btncanvas, text="Select File", command=self.onSelectedFile)
-		self.selectbtn.grid(row=0, column=2, sticky=E, pady=5, padx=5)
+		self.selectedFileLabel = CTkLabel(self.root, text="Filepath: ")
+		self.selectedFileLabel.pack(after=self.treeviewCanvas,side=LEFT,anchor=E)
+		self.selectedFileAddressBar = CTkEntry(self.root)
+		self.selectedFileAddressBar.pack(after=self.selectedFileLabel,fill=X,expand=True,side=LEFT,anchor=W)
+		self.selectbtn = CTkButton(self.root, text="Select File", command=self.onSelectedFile)
+		self.selectbtn.pack(after=self.selectedFileAddressBar,side=LEFT,anchor=E,padx=5)
 
 		def update_selected_file(event):
 			selected_item = self.fileselection.focus()
