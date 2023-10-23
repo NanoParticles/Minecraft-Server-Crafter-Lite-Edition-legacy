@@ -1264,7 +1264,6 @@ class ConsoleShell(CTkFrame):
 		global process2
 		global outputThread
 		global jar_filenamePath
-		global MemoryAllocationCap
 
 		root_tabs.set("Console Shell")
 		self.killEvent = False
